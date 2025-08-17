@@ -1,0 +1,14 @@
+streamlit
+langchain-google-genai
+google-generativeai
+PyPDF2
+Pillow
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+pymongo
+pinecone
+sentence-transformers
+numpy
+scikit-learn
