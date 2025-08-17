@@ -5,6 +5,7 @@ This is now a modular FastAPI application with organized route structure.
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routes import chat, uploads, plans, analytics
+import os
 
 # Initialize FastAPI app
 app = FastAPI(title="Elyx Health Concierge API", version="1.0.0")
@@ -33,4 +34,4 @@ async def root():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=os.environ['PORT'])
