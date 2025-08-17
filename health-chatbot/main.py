@@ -12,7 +12,7 @@ app = FastAPI(title="Elyx Health Concierge API", version="1.0.0")
 # CORS middleware for React app
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173"],  # Add your React app URLs
+    allow_origins=["*"],  # Add your React app URLs
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
